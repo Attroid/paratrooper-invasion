@@ -289,9 +289,7 @@ class ParatrooperInvasionGame extends GameLoop {
 window.addEventListener("load", () => {
   const display = new Display(400, 300, 2);
   const input = new Input(display.canvas);
-  const sounds = new Sounds(
-    "https://geronimo.okol.org/~attkoiv/paratrooper-invasion/2.1.0/SOUNDS"
-  );
+  const sounds = new Sounds("./SOUNDS");
   let game;
 
   document.querySelector("#start").addEventListener("click", () => {
