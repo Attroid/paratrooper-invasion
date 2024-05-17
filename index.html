@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Paratrooper invasion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Paratrooper invasion 2.1.0</h1>
+    <form>
+      <div id="multiselect">
+        <div id="selectBox">
+          <select>
+            <option>Asetukset</option>
+          </select>
+          <div id="overSelect"></div>
+        </div>
+        <div id="checkboxes">
+          <label for="touchpad-box">
+            <input type="checkbox" id="touchpad-box" />
+            Mobiilitila
+          </label>
+          <label for="old-touchpad-box" id="toHide" style="display: none">
+            <input type="checkbox" id="old-touchpad-box" />
+            Wanha touchpad (mobiili)
+          </label>
+          <label for="sounds-check-box">
+            <input type="checkbox" id="sounds-check-box" />
+            Mykistä äänet
+          </label>
+        </div>
+      </div>
+    </form>
+    <p>
+      <button id="start">Aloita peli</button>
+    </p>
+
+    <div class="tooltip">
+      <canvas
+        id="game"
+        tabindex="1"
+        width="800"
+        height="610"
+        style="background-color: rgb(255, 255, 255)"
+        class="started-game"
+      ></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script type="module" src="./JS/index.js"></script>
+  </body>
+</html>
